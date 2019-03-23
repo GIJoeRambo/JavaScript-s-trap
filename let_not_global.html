@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	let haha = 12345; //let定义的变量不在全局变量中
+
+	console.log(this); //this ----> windows
+	console.log(this.haha); //undefined
+
+	function welcome(){
+		let haha = 34567; //let定义的变量不在全局变量中
+		console.log(this); //undefined
+	}
+
+	welcome();
+</script>
+</html>
